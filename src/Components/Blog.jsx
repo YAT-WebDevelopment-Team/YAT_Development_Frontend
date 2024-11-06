@@ -117,7 +117,7 @@ const Blog = () => {
                                 amet consectetur adipisicing elit Quisquam ipsum dolor sit amet consectetur
                                 consectetur adipisicing elit Quisquam sit amet consectetur adipisicing.
                             </p>
-                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-800 hover:text-white hover:border-indigo-800 transition duration-300">
+                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
                                 Read More
                             </button>
                         </div>
@@ -140,7 +140,7 @@ const Blog = () => {
                                 amet consectetur adipisicing elit Quisquam ipsum dolor sit amet consectetur
                                 consectetur adipisicing elit Quisquam sit amet consectetur adipisicing.
                             </p>
-                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-800 hover:text-white hover:border-indigo-800 transition duration-300">
+                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
                                 Read More
                             </button>
                         </div>
@@ -163,7 +163,7 @@ const Blog = () => {
                                 amet consectetur adipisicing elit Quisquam ipsum dolor sit amet consectetur
                                 consectetur adipisicing elit Quisquam sit amet consectetur adipisicing.
                             </p>
-                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-800 hover:text-white hover:border-indigo-800 transition duration-300">
+                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
                                 Read More
                             </button>
                         </div>

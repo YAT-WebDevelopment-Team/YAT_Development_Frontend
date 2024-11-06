@@ -37,7 +37,7 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center space-x-2 py-2">
                             <FaLocationDot className="text-gray-500" />
-                            <span className='text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out'>Yobek Building, Addis Ababa, Ethiopia</span>
+                            <span className='text-gray-500  transform transition-all duration-300 ease-in-out'>Yobek Building, Addis Ababa, Ethiopia</span>
                         </div>
                     </div>
 
