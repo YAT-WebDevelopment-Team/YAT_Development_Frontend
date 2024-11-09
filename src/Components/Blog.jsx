@@ -10,15 +10,15 @@ import { Helmet } from 'react-helmet'
 import { FaCalendar } from 'react-icons/fa6'
 
 const Blog = () => {
+    const page = "Blogs"
     return (
-
 
         <div className={`bg-gray-100 min-h-screen `}>
             <Helmet>
                 <title>Blog</title>
             </Helmet>
 
-            <Header />
+            <Header page={page}/>
 
             <div className="relative h-80 bg-cover " style={{ backgroundImage: "url('/Images/bghero3.jpg')" }}>
                 <div className="bg-gradient-to-r absolute inset-0  from-indigo-900 via-indigo-800 to-indigo-300  opacity-65"></div>
@@ -168,9 +168,6 @@ const Blog = () => {
                             </button>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
             <Footer />

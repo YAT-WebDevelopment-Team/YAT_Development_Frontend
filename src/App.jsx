@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import './App.css'
+
 import Blog from './Components/Blog';
+import Exports from './Components/Exports';
 
 function App() {
 
@@ -9,6 +10,8 @@ function App() {
   <Router>
     <Routes>
        <Route path='/' element={<Blog/>}/>
+       <Route path='/Exports' element={<Exports/>}/>
+       
     </Routes>
   </Router>
   )

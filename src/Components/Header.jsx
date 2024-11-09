@@ -93,7 +93,7 @@ const Header = ({ page }) => {
     }, []);
 
     return (
-        <div className={` ${showTopBar? 'pb-24' : 'pb-20'}`}>
+        <div className={` ${showTopBar ? 'pb-24' : 'pb-20'}`}>
             {/* {showTopBar && <TopBar />} */}
             <header className={`fixed top-0 w-full z-50 transition-all mb-24 duration-300 ${isScrolled ? 'bg-gray-100 shadow-lg' : 'bg-white'} `}>
                 {showTopBar && (
@@ -107,44 +107,44 @@ const Header = ({ page }) => {
                             <FaPhoneAlt className="text-white hover:text-gray-300" />
                             <a href="tel:+251911362741" className="text-white hover:text-gray-300 transform transition-all duration-300 ease-in-out">+251-911-362-741</a>
                         </div>
-                        <div className="flex items-center space-x-2 py-2">
+                        <div className="hidden md:flex items-center space-x-2 py-2">
                             <FiMail className="text-white" />
                             <a href="mailto:yatagro@gmail.com" className="text-white hover:text-gray-200  transform transition-all duration-300 ease-in-out"> yatagro@gmail.com</a>
                         </div>
 
 
                         <div className="flex space-x-3">
-                           <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaFacebook size={20} /></a>
-                           <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaTelegram size={20} /></a>
-                           <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaInstagram size={20} /></a>
-                           <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaLinkedin  size={20} /></a>
-                           <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaTwitter  size={20} /></a>
-                    </div>
+                            <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaFacebook size={20} /></a>
+                            <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaTelegram size={20} /></a>
+                            <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaInstagram size={20} /></a>
+                            <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaLinkedin size={20} /></a>
+                            <a href="#" className="text-white hover:text-gray-300 transition duration-300"><FaTwitter size={20} /></a>
+                        </div>
                     </div>
                 )}
                 <nav className="container xl:mx-auto sm:mx-9 p-4 flex justify-between items-center">
                     <div className=" text-xl font-bold text-blue-900 w-60">
-                        <Link to="/"><img src={yatlogo} alt="Yat" className='w-full h-full object-contain' /></Link>
+                        <Link to="#"><img src={yatlogo} alt="Yat" className='w-full h-full object-contain' /></Link>
                     </div>
 
                     <div className="hidden md:flex lg:space-x-12 space-x-4">
                         <div className="relative">
-                            <a
-                                href="#"
+                            <Link
+                               to="#"
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
-                                className={`text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer`}
+                                className={`text-lg font-semibold  hover:text-indigo-800 cursor-pointer  ${page === 'Manufacturing' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
                                 Manufacturing
-                            </a>
+                            </Link>
                         </div>
                         <div className="relative">
                             <Link
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
-                                to="/Real_Estates"
-                                className={` text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer'}`}
+                                to="/Exports"
+                                className={` text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer ${page === 'Export' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
                                 Export
@@ -154,7 +154,7 @@ const Header = ({ page }) => {
                             <Link
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
-                                to="/Expo"
+                                to="#"
                                 className={`text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer'}`}
                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
@@ -188,19 +188,21 @@ const Header = ({ page }) => {
                             {showDropdown && (
                                 <div className={`absolute top-10 left-0 mt-3 w-48  shadow-lg border  rounded-b-md ${isScrolled ? 'bg-gray-100 shadow-lg' : 'bg-white'}`}>
                                     <ul className="py-1">
-                                        <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
-                                            <Link to='/' className="text-gray-700 hover:scale-125">Your Expo</Link>
-                                        </li>
-                                        <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
-                                            <a href="#" className="text-gray-700">News</a>
-                                        </li>
-                                        <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
-                                            <a href="#" className="text-gray-700">About</a>
-                                        </li>
 
                                         <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
-                                            <button onClick={handleContactClick} className="text-gray-700">Contact us</button>
+                                            <Link to="/"
+                                                onClick={() => setShowDropdown(!showDropdown)}
+                                                className="text-gray-700">
+                                                Blogs
+                                            </Link>
                                         </li>
+                                        <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
+                                            <a href="#" className="text-gray-700">Contact Us</a>
+                                        </li>
+
+                                        {/* <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
+                                            <button onClick={handleContactClick} className="text-gray-700">Contact us</button>
+                                        </li> */}
                                     </ul>
                                 </div>
                             )}
@@ -223,19 +225,19 @@ const Header = ({ page }) => {
                         <div className="space-y-4 py-4 px-4">
                             <div className="relative">
                                 <Link
-                                    to="/Real_Estates"
+                                    to="#"
                                     className="text-gray-700 hover:text-blue-900 hover:font-bold transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-105"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}
                                 >
-                                    Real Estates
+                                    Manufacturing
                                 </Link>
                             </div>
                             <div className="relative">
                                 <Link
-                                    to="/Expo"
+                                    to="#"
                                     className="text-gray-700 hover:text-blue-950 transform hover:font-bold transition-transform duration-300"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}>
-                                    Explore Expo
+                                    Import
                                 </Link>
                             </div>
                             <div className="relative">
@@ -244,7 +246,16 @@ const Header = ({ page }) => {
                                     className="text-gray-700 hover:text-blue-950 hover:font-bold transform transition-transform duration-300"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}
                                 >
-                                    Upcoming Events
+                                    Import
+                                </a>
+                            </div>
+                            <div className="relative">
+                                <a
+                                    href="#"
+                                    className="text-gray-700 hover:text-blue-950 hover:font-bold transform transition-transform duration-300"
+                                    style={{ display: 'inline-block', transformOrigin: 'center' }}
+                                >
+                                    About
                                 </a>
                             </div>
                             <div className="relative" ref={dropdownRef}>
@@ -262,17 +273,20 @@ const Header = ({ page }) => {
                                     <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded-md">
                                         <ul className="py-1">
                                             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                                <Link to='/' className="text-gray-700 hover:scale-125">Your Expo</Link>
+                                                <Link to='/'
+                                                    onClick={() => setShowDropdown(!showDropdown)}
+                                                    className="text-gray-700 hover:scale-125">
+                                                    Blogs
+                                                </Link>
                                             </li>
                                             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                                <a href="#" className="text-gray-700">News</a>
+                                                <Link to='' className="text-gray-700 hover:scale-125">Contact Us</Link>
                                             </li>
-                                            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                                <a href="#" className="text-gray-700">About</a>
-                                            </li>
-                                            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+
+
+                                            {/* <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                                 <button onClick={handleContactClick} className="text-gray-700">Contact us</button>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 )}

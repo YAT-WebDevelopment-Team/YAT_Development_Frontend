@@ -10,8 +10,8 @@ import { useNavigate } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='bg-gray-100'>
-            <section className="mx-5 md:mx-10">
-                <div className="bg-gradient-to-br from-indigo-800  to-indigo-500 p-6 sm:p-10 rounded-2xl w-full text-white flex items-center justify-between max-w-full mx-auto mt-10">
+            <section className="">
+                <div className="bg-gradient-to-br from-indigo-800  to-indigo-500 p-6 sm:p-10 w-full text-white flex items-center justify-between max-w-full mx-auto mt-10">
                     <div className="flex flex-col gap-6">
                         <div>
                             <span className="text-gray-200 text-lg">Start working with us</span>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
             </section>
             {/* Main Footer */}
-            <div className="bg-gray-200 shadow-2xl text-indigo-800 py-12 mt-10 p-3">
+            <div className="bg-gray-200 shadow-2xl text-indigo-800 py-12 p-3">
                 <div className="container mx-auto grid md:grid-cols-4 sm:grid-cols-2 gap-8">
 
                     <div>
@@ -45,16 +45,16 @@ const Footer = () => {
                         <h4 className="font-bold text-indigo-700 mb-5">Information</h4>
                         <ul>
                             <li className="pb-2">
-                                <Link to='#' className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out">Manufacturing</Link>
+                                <Link to='#' className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Manufacturing</Link>
                             </li>
                             <li className="pb-2">
-                                <Link to='#' className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out">Import</Link>
+                                <Link to='#' className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Import</Link>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out">Export</a>
+                                <Link to="/Exports" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Export</Link>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out">Blog</a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -63,22 +63,22 @@ const Footer = () => {
                         <h4 className="font-bold text-indigo-700 mb-5">Helpful Links</h4>
                         <ul>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out"> About Us</a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> About Us</a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out">FAQ</a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">FAQ</a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out"> Help & Support</a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Help & Support</a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out"> Terms & Conditions </a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Terms & Conditions </a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out"> Privacy Policy </a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Privacy Policy </a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800  transform transition-all duration-300 ease-in-out"> Contact Us </a>
+                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Contact Us </a>
                             </li>
                         </ul>
                     </div>
@@ -88,12 +88,12 @@ const Footer = () => {
 
                         <div className="flex items-center space-x-2 py-2 text-gray-500">
                             <FaPhone className="text-indigo-800" />
-                            <a href="tel:+251911362741" className="text-gray-500 hover:text-indigo-800 transform transition-all duration-300 ease-in-out">+251 911 362 741</a>
+                            <a href="tel:+251911362741" className="text-gray-500 hover:text-indigo-800 hover:font-semibold transform transition-all duration-300 ease-in-out">+251 911 362 741</a>
                         </div>
 
                         <div className="flex items-center space-x-2 py-2 text-gray-500">
                             <FiMail className="text-indigo-800" />
-                            <a href="mailto:yatagro@gmail.com" className="text-gray-500 hover:text-indigo-800 transform transition-all duration-300 ease-in-out">yatagro@gmail.com</a>
+                            <a href="mailto:yatagro@gmail.com" className="text-gray-500 hover:text-indigo-800 hover:font-semibold transform transition-all duration-300 ease-in-out">yatagro@gmail.com</a>
                         </div>
 
                         <div className="mt-4 flex">

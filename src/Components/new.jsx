@@ -176,7 +176,41 @@ const Header = () => {
           </div>
         )}
       </div>
+                           {/* <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{ delay: 5000, }}
+                        navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                        modules={[Autoplay, Navigation]}
+                        className="h-[500px] w-full relative rounded-md"
+
+                    >
+                        {ExportItemsData.map((slider) => (
+                            <SwiperSlide key={slider.id} className="relative group h-full overflow-hidden">
+
+                                <div className="w-full h-full flex items-center justify-center bg-gray-100">
+                                    <img src={slider.img} alt={slider.title} className="object-cover w-full h-full max-w-full max-h-full" />
+                                </div>
+
+
+                                <div className="absolute inset-0 bg-indigo-800 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
+                                    <p className="text-white text-2xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        {slider.title}
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+
+
+                        <div className="swiper-button-next text-white hover:text-indigo-900 p-2 rounded-full transition-all duration-200">
+
+                        </div>
+                        <div className="swiper-button-prev text-white hover:text-indigo-900 p-2 rounded-full transition-all duration-200">
+
+                        </div>
+                    </Swiper>  */}
     </header>
+    
   );
 };
 

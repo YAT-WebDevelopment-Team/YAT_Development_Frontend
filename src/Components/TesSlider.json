@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Well Harvested",
+        "description": "Standard harvesting processes & procedures",
+        "icon": "FaTractor"
+    },
+    {
+        "id": 2,
+        "title": "Well Processed",
+        "description": "Full automation to clean, wash, sort, grade & package",
+        "icon": "FaCog"
+    },
+    {
+        "id": 3,
+        "title": "Well Packaged",
+        "description": "Packaged with ease of shipping preservation of freshness & quality",
+        "icon": "FaBoxOpen"
+    },
+    {
+        "id": 4,
+        "title": "Quality Assurance",
+        "description": "Ensuring quality at each step",
+        "icon": "FaCheckCircle"
+    },
+    {
+        "id": 5,
+        "title": "Efficient Logistics",
+        "description": "Fast and reliable delivery options",
+        "icon": "FaTruck"
+    },
+    {
+        "id": 6,
+        "title": "Customer Satisfaction",
+        "description": "Dedicated to meeting customer expectations",
+        "icon": "FaSmile"
+    }
+]
