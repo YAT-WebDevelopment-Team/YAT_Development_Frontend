@@ -196,6 +196,14 @@ const Header = ({ page }) => {
                                                 Blogs
                                             </Link>
                                         </li>
+                                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                            <Link to='/ServiceLines'
+                                                onClick={() => setShowDropdown(!showDropdown)}
+                                                className="text-gray-700 hover:scale-125">
+                                                Service Lines
+                                            </Link>
+                                        </li>
+
                                         <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
                                             <a href="#" className="text-gray-700">Contact Us</a>
                                         </li>
@@ -279,6 +287,14 @@ const Header = ({ page }) => {
                                                     Blogs
                                                 </Link>
                                             </li>
+                                            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                                <Link to='/ServiceLines'
+                                                    onClick={() => setShowDropdown(!showDropdown)}
+                                                    className="text-gray-700 hover:scale-125">
+                                                    Service Lines
+                                                </Link>
+                                            </li>
+
                                             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                                 <Link to='' className="text-gray-700 hover:scale-125">Contact Us</Link>
                                             </li>
