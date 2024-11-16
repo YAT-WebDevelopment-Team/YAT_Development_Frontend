@@ -1,36 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import ExportItemsData from "../Components/ExportItems.json";
 
-const data = [
-    {
-        id: 1,
-        image: "/Images/coffee_bean1.png",
-        img: "/Images/coffeeslider1.jpg",
-        title: "COFFEE",
-        items: ["Yirgacheffe", "Sidama", "Kochere"],
-    },
-    {
-        id: 2,
-        image: "/Images/teaimg.png",
-        img: "/Images/teaca4.jpg",
-        title: "TEA",
-        items: ["Black teas", "Green teas", "Herbal teas"],
-    },
-    {
-        id: 3,
-        image: "/Images/red-beans.png",
-        img: "/Images/pulses.png",
-        title: "PULSES & CEREALS",
-        items: ["Chick Pea", "Soya Beans", "Lentils"],
-    },
-    {
-        id: 4,
-        image: "/Images/oilseeds.png",
-        img: "/Images/oilseedca2.jpg",
-        title: "OIL SEEDS",
-        items: ["Sesame Seeds", "Castor Seeds", "Niger Nugs", "Nuts"],
-    },
-];
+const data = ExportItemsData
 
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +36,7 @@ const Hero = () => {
             ></div>
 
             {/* Color Overlay with Blur */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-50 blur-md"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-30 blur-md"></div>
 
             {/* Content */}
             <div className="relative text-center px-6 z-10">

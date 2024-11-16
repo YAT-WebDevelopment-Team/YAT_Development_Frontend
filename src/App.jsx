@@ -1,30 +1,3 @@
-// import { useState } from 'react'
-// import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-// import Home from './Components/Home';
-// import Blog from './pages/Blog';
-// import Exports from './pages/Exports';
-// import ServiceLines from './pages/ServiceLines';
-// import Imports from './pages/Imports';
-
-// function App() {
-
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path='/' element={<Home />} />
-//         <Route path='/Blogs' element={<Blog />} />
-//         <Route path='/Exports' element={<Exports />} />
-//         <Route path='/Imports' element={<Imports />} />
-//         <Route path='/ServiceLines' element={<ServiceLines />} />
-//       </Routes>
-//     </Router>
-//   )
-// }
-
-
-
-import { useState } from 'react'
-// import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import {
   createBrowserRouter,
   RouterProvider,
