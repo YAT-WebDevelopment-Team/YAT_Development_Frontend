@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter, FaChevronDown, FaBars, FaTimes, FaSearch, FaSearchPlus, FaLocationArrow, FaPhone, FaPhoneSquare, FaPhoneAlt, FaTelegram } from 'react-icons/fa';
 import yatlogo from "/Images/yatlogo.png"
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import { FiMail } from 'react-icons/fi';
 import { FaLocationDot, FaPhoneFlip } from 'react-icons/fa6';
 
@@ -130,49 +130,57 @@ const Header = ({ page }) => {
                     <div className="hidden md:flex lg:space-x-12 space-x-4">
 
                         <div className="relative">
-                            <Link
+                            <NavLink
                                 to="/"
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
-                                className={`text-lg font-semibold  hover:text-indigo-800 cursor-pointer  ${page === 'Home' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
-                                style={{ display: 'inline-block', transformOrigin: 'center' }}
+                                className={({ isActive }) =>
+                                    `${isActive ? "text-indigo-700 font-bold" : "text-gray-700"} text-lg font-semibold hover:text-indigo-800 cursor-pointer`
+                                }
+                                style={{ display: 'inline-block', transformOrigin: 'center' }} 
                             >
                                 Home
-                            </Link>
+                            </NavLink>
                         </div>
 
                         <div className="relative">
-                            <Link
-                                to="#"
+                            <NavLink
+                                to="/manufacturing"
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
-                                className={`text-lg font-semibold  hover:text-indigo-800 cursor-pointer  ${page === 'Manufacturing' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
+                                className={({ isActive }) =>
+                                    `${isActive ? "text-indigo-700 font-bold" : "text-gray-700"} text-lg font-semibold hover:text-indigo-800 cursor-pointer`
+                                }
                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
                                 Manufacturing
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="relative">
-                            <Link
+                            <NavLink
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
                                 to="/Exports"
-                                className={` text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer ${page === 'Export' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
-                                style={{ display: 'inline-block', transformOrigin: 'center' }}
+                                className={({ isActive }) =>
+                                    `${isActive ? "text-indigo-700 font-bold" : "text-gray-700"} text-lg font-semibold hover:text-indigo-800 cursor-pointer`
+                                }
+                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
                                 Export
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="relative">
-                            <Link
+                            <NavLink
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
                                 to="/Imports"
-                                className={` text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer ${page === 'Import' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
+                                className={({ isActive }) =>
+                                    `${isActive ? "text-indigo-700 font-bold" : "text-gray-700"} text-lg font-semibold hover:text-indigo-800 cursor-pointer`
+                                }
                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
                                 Import
-                            </Link>
+                            </NavLink>
                         </div>
 
                         <div className="relative" ref={dropdownRef}>
@@ -249,13 +257,15 @@ const Header = ({ page }) => {
                     <div className="xl:hidden bg-gray-100 shadow-lg">
                         <div className="space-y-4 py-4 px-4">
                             <div className="relative">
-                                <Link
+                                <NavLink
                                     to="/"
-                                    className="text-gray-700 hover:text-blue-900 hover:font-bold transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-105"
-                                    style={{ display: 'inline-block', transformOrigin: 'center' }}
+                                    className="text-gray-700 hover:text-blue-900 hover:font-bold transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105"
+                                    activeClassName="text-blue-900 font-bold" // For older react-router-dom versions
+                                // or for newer versions, you can directly use `className` with a function:
+                                // className={({ isActive }) => isActive ? 'text-blue-900 font-bold' : 'text-gray-700'}
                                 >
                                     Home
-                                </Link>
+                                </NavLink>
                             </div>
                             <div className="relative">
                                 <Link
