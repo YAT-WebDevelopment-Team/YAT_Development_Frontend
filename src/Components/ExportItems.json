@@ -5,6 +5,7 @@
         "image":"/Images/coffee_bean1.png",
         "img":"/Images/coffeeslider1.jpg",
         "title": "COFFEE",
+         "type" : "Export",
         "items": [
             "Yirgacheffe",
             "Sidama",
@@ -16,6 +17,7 @@
         "image":"/Images/teaimg.png",
         "img":"/Images/teaca4.jpg",
         "title": "TEA",
+         "type" : "Export",
         "items": [
             "Black teas",
             "Green teas",
@@ -27,6 +29,7 @@
         "image":"/Images/red-beans.png",
         "img":"/Images/pulses.png",
         "title": "PULSES & CEREALS",
+         "type" : "Export",
         "items": [
             "Chick Pea",
             "Soya Beans",
@@ -38,6 +41,7 @@
         "image":"/Images/oilseeds.png",
         "img":"/Images/oilseedca2.jpg",
         "title": "OIL SEEDS",
+         "type" : "Export",
         "items": [
             "Sesame Seeds",
             "Castor Seeds",

@@ -97,7 +97,7 @@ const Header = ({ page }) => {
             {/* {showTopBar && <TopBar />} */}
             <header className={`fixed top-0 w-full z-50 transition-all mb-24 duration-300 ${isScrolled ? 'bg-gray-100 shadow-lg' : 'bg-white'} `}>
                 {showTopBar && (
-                    <div className="bg-indigo-700 text-white flex justify-between items-center px-4 py-2 md:px-8  transition duration-300">
+                    <div className="bg-indigo-600 text-white flex justify-between items-center px-4 py-1 md:px-8  transition duration-300">
 
                         {/* <div className="flex items-center space-x-2 py-2">
                             <FaLocationDot className="text-white" />
@@ -124,13 +124,26 @@ const Header = ({ page }) => {
                 )}
                 <nav className="container xl:mx-auto sm:mx-9 p-4 flex justify-between items-center">
                     <div className=" text-xl font-bold text-blue-900 w-60">
-                        <Link to="#"><img src={yatlogo} alt="Yat" className='w-full h-full object-contain' /></Link>
+                        <Link to="/"><img src={yatlogo} alt="YAT" className='w-full h-full object-contain' /></Link>
                     </div>
 
                     <div className="hidden md:flex lg:space-x-12 space-x-4">
+
                         <div className="relative">
                             <Link
-                               to="#"
+                                to="/"
+                                onMouseEnter={() => setShowDropdown(false)}
+                                onClick={() => setShowDropdown(false)}
+                                className={`text-lg font-semibold  hover:text-indigo-800 cursor-pointer  ${page === 'Home' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
+                                style={{ display: 'inline-block', transformOrigin: 'center' }}
+                            >
+                                Home
+                            </Link>
+                        </div>
+
+                        <div className="relative">
+                            <Link
+                                to="#"
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
                                 className={`text-lg font-semibold  hover:text-indigo-800 cursor-pointer  ${page === 'Manufacturing' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
@@ -154,24 +167,12 @@ const Header = ({ page }) => {
                             <Link
                                 onMouseEnter={() => setShowDropdown(false)}
                                 onClick={() => setShowDropdown(false)}
-                                to="#"
-                                className={`text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer'}`}
+                                to="/Imports"
+                                className={` text-lg font-semibold text-gray-700 hover:text-indigo-800 cursor-pointer ${page === 'Import' ? 'text-indigo-700 ' : 'text-gray-700 font-semibold'}`}
                                 style={{ display: 'inline-block', transformOrigin: 'center' }}
                             >
                                 Import
                             </Link>
-                        </div>
-
-                        <div className="relative">
-                            <a
-                                href="#"
-                                onMouseEnter={() => setShowDropdown(false)}
-                                onClick={() => setShowDropdown(false)}
-                                className={`text-lg font-semibold text-gray-600 hover:text-indigo-800 cursor-pointer`}
-                                style={{ display: 'inline-block', transformOrigin: 'center' }}
-                            >
-                                About
-                            </a>
                         </div>
 
                         <div className="relative" ref={dropdownRef}>
@@ -190,12 +191,13 @@ const Header = ({ page }) => {
                                     <ul className="py-1">
 
                                         <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
-                                            <Link to="/"
+                                            <Link to="#"
                                                 onClick={() => setShowDropdown(!showDropdown)}
                                                 className="text-gray-700">
-                                                Blogs
+                                                About
                                             </Link>
                                         </li>
+
                                         <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                             <Link to='/ServiceLines'
                                                 onClick={() => setShowDropdown(!showDropdown)}
@@ -205,8 +207,17 @@ const Header = ({ page }) => {
                                         </li>
 
                                         <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
-                                            <a href="#" className="text-gray-700">Contact Us</a>
+                                            <Link to="/Blogs"
+                                                onClick={() => setShowDropdown(!showDropdown)}
+                                                className="text-gray-700">
+                                                Blogs
+                                            </Link>
                                         </li>
+
+
+                                        {/* <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
+                                            <a href="#" className="text-gray-700">Contact Us</a>
+                                        </li> */}
 
                                         {/* <li className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-gray-100'}`}>
                                             <button onClick={handleContactClick} className="text-gray-700">Contact us</button>
@@ -217,9 +228,15 @@ const Header = ({ page }) => {
                         </div>
                     </div>
 
-                    <div className=" md:flex space-x-4">
-                        <p><FaSearch className='text-lg' /></p>
+                    <div className="flex items-center md:space-x-4 space-x-2">
+                        <button className="md:w-32 w-28 md:px-4 px-2 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-700 text-white font-semibold shadow-lg hover:from-indigo-600 hover:to-indigo-800 hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-opacity-50">
+                            Contact Us
+                        </button>
+                        <div className="flex items-center justify-center w-10 h-10 rounded-full    transition-all duration-300">
+                            <FaSearch className="text-gray-700 text-lg" />
+                        </div>
                     </div>
+
 
                     <div className="md:hidden">
                         <button onClick={handleMenuClick} className="text-2xl text-blue-950 focus:outline-none">
@@ -233,6 +250,15 @@ const Header = ({ page }) => {
                         <div className="space-y-4 py-4 px-4">
                             <div className="relative">
                                 <Link
+                                    to="/"
+                                    className="text-gray-700 hover:text-blue-900 hover:font-bold transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-105"
+                                    style={{ display: 'inline-block', transformOrigin: 'center' }}
+                                >
+                                    Home
+                                </Link>
+                            </div>
+                            <div className="relative">
+                                <Link
                                     to="#"
                                     className="text-gray-700 hover:text-blue-900 hover:font-bold transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-105"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}
@@ -242,29 +268,29 @@ const Header = ({ page }) => {
                             </div>
                             <div className="relative">
                                 <Link
-                                    to="#"
+                                    to="/Exports"
                                     className="text-gray-700 hover:text-blue-950 transform hover:font-bold transition-transform duration-300"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}>
-                                    Import
+                                    Export
                                 </Link>
                             </div>
                             <div className="relative">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/Imports"
                                     className="text-gray-700 hover:text-blue-950 hover:font-bold transform transition-transform duration-300"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}
                                 >
                                     Import
-                                </a>
+                                </Link>
                             </div>
                             <div className="relative">
-                                <a
+                                {/* <a
                                     href="#"
                                     className="text-gray-700 hover:text-blue-950 hover:font-bold transform transition-transform duration-300"
                                     style={{ display: 'inline-block', transformOrigin: 'center' }}
                                 >
                                     About
-                                </a>
+                                </a> */}
                             </div>
                             <div className="relative" ref={dropdownRef}>
                                 <button
@@ -281,10 +307,10 @@ const Header = ({ page }) => {
                                     <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded-md">
                                         <ul className="py-1">
                                             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                                <Link to='/'
+                                                <Link to='#'
                                                     onClick={() => setShowDropdown(!showDropdown)}
                                                     className="text-gray-700 hover:scale-125">
-                                                    Blogs
+                                                    About
                                                 </Link>
                                             </li>
                                             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -294,10 +320,16 @@ const Header = ({ page }) => {
                                                     Service Lines
                                                 </Link>
                                             </li>
-
                                             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                                                <Link to='' className="text-gray-700 hover:scale-125">Contact Us</Link>
+                                                <Link to='/Blogs'
+                                                    onClick={() => setShowDropdown(!showDropdown)}
+                                                    className="text-gray-700 hover:scale-125">
+                                                    Blogs
+                                                </Link>
                                             </li>
+                                            {/* <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                                <Link to='' className="text-gray-700 hover:scale-125">Contact Us</Link>
+                                            </li> */}
 
 
                                             {/* <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -310,11 +342,12 @@ const Header = ({ page }) => {
 
                         </div>
                     </div>
-                )}
+                )
+                }
 
 
-            </header>
-        </div>
+            </header >
+        </div >
     );
 };
 

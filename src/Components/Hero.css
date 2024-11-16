@@ -1,0 +1,21 @@
+
+.custom-slide-effect-0 .group-hover img {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.custom-slide-effect-1 .group-hover img {
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 0.7s ease-in-out;
+}
+
+.custom-slide-effect-2 .group-hover img {
+    transform: scaleX(0);
+    transition: transform 0.7s ease-in-out;
+}
+
+.custom-slide-effect-3 .group-hover img {
+    transform: translateY(-100%);
+    transition: transform 0.7s ease-in-out;
+}
+
+

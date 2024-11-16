@@ -13,15 +13,15 @@ const Blog = () => {
     const page = "Blogs"
     return (
 
-        <div className={`bg-gray-100 min-h-screen `}>
+        <div className={`bg-gray-50 min-h-screen overflow-x-hidden`}>
             <Helmet>
                 <title>Blog</title>
             </Helmet>
 
             <Header page={page}/>
 
-            <div className="relative h-80 bg-cover " style={{ backgroundImage: "url('/Images/bghero3.jpg')" }}>
-                <div className="bg-gradient-to-r absolute inset-0  from-indigo-900 via-indigo-800 to-indigo-300  opacity-65"></div>
+            <div className="h-[450px] fixed top-0 w-full z-0 bg-cover mt-10" style={{ backgroundImage: "url('/Images/bghero3.jpg')" }}>
+                <div className="bg-gradient-to-r absolute inset-0  from-gray-950 via-gray-900 to-gray-600  opacity-80"></div>
 
                 <div className="relative flex justify-center items-center h-full px-8">
                     <h1 className="text-4xl text-white font-bold">Blogs</h1>
@@ -35,7 +35,9 @@ const Blog = () => {
 
             </div>
 
-            <div className="container mx-auto md:px-1 px-3 py-20 flex lg:flex-row flex-col-reverse lg:space-x-14 ">
+            {/* <section className="w-full relative z-10 bg-gray-50 flex flex-col lg:flex-row items-center md:items-start gap-8  p-8 lg:px-28 sm:px-11 px-5  mt-[450px] space-x-4 justify-center"></section> */}
+
+            <div className="w-full relative z-10 bg-gray-50   md:px-1 px-3 py-20 mt-[450px] flex lg:flex-row flex-col-reverse lg:space-x-14 ">
                 <div></div>
                 <div className="lg:w-1/3 space-y-8">
 
@@ -110,14 +112,14 @@ const Blog = () => {
                         </div>
                         <div className="p-6">
                             <p className="text-gray-600 text-sm mb-4 text-left">November 6, 2024 • 0 Comments</p>
-                            <h2 className="text-2xl text-gray-800 font-bold mb-2 text-left">Blog Title Goes Here</h2>
+                            <h2 className="text-2xl text-gray-800 font-bold mb-2 text-left">Blog Title</h2>
 
                             <p className="text-gray-700 mb-4 text-left">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam, quae
                                 amet consectetur adipisicing elit Quisquam ipsum dolor sit amet consectetur
                                 consectetur adipisicing elit Quisquam sit amet consectetur adipisicing.
                             </p>
-                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
+                            <button className="mt-2  font-semibold border-2 rounded-full border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
                                 Read More
                             </button>
                         </div>
@@ -133,14 +135,14 @@ const Blog = () => {
                         </div>
                         <div className="p-6">
                             <p className="text-gray-600 text-sm mb-4 text-left">November 6, 2024 • 0 Comments</p>
-                            <h2 className="text-2xl text-gray-800 font-bold mb-2 text-left">Blog Title Goes Here</h2>
+                            <h2 className="text-2xl text-gray-800 font-bold mb-2 text-left">Blog Title</h2>
 
                             <p className="text-gray-700 mb-4 text-left">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam, quae
                                 amet consectetur adipisicing elit Quisquam ipsum dolor sit amet consectetur
                                 consectetur adipisicing elit Quisquam sit amet consectetur adipisicing.
                             </p>
-                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
+                            <button className=" mt-2 border-2 rounded-full font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
                                 Read More
                             </button>
                         </div>
@@ -156,14 +158,14 @@ const Blog = () => {
                         </div>
                         <div className="p-6">
                             <p className="text-gray-600 text-sm mb-4 text-left">November 6, 2024 • 0 Comments</p>
-                            <h2 className="text-2xl text-gray-800 font-bold mb-2 text-left">Blog Title Goes Here</h2>
+                            <h2 className="text-2xl text-gray-800 font-bold mb-2 text-left">Blog Title</h2>
 
                             <p className="text-gray-700 mb-4 text-left">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam, quae
                                 amet consectetur adipisicing elit Quisquam ipsum dolor sit amet consectetur
                                 consectetur adipisicing elit Quisquam sit amet consectetur adipisicing.
                             </p>
-                            <button className=" mt-2 border font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
+                            <button className=" mt-2 border-2 rounded-full font-semibold border-gray-500 text-gray-900 px-4 py-2  hover:bg-indigo-700 hover:text-white hover:border-indigo-700 transition duration-300">
                                 Read More
                             </button>
                         </div>

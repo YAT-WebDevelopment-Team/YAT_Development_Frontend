@@ -1,0 +1,28 @@
+[
+
+    {
+        "id":1,
+        "img":"/Images/bghero3b.png",
+        "title": "TRANSFORMER"
+    },
+    {
+        "id":2,
+        "img":"/Images/Hero_Exports3.jpg",
+        "title": "COFFEE"
+    },
+    {
+        "id":3,
+        "img":"/Images/teaca4.jpg",
+        "title": "TEA"
+    },
+    {
+        "id":4,
+        "img":"/Images/pulses.png",
+        "title": "PULSES & CEREALS"
+    },
+    {
+        "id":5,
+        "img":"/Images/oilseedca2.jpg",
+        "title": "OIL SEEDS"
+    }
+]

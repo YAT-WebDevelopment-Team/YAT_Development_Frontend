@@ -1,0 +1,50 @@
+[
+
+    {
+        "id":1,
+        "image":"/Images/protex1.png",
+        "img":"/Images/sewingmachine3.png",
+        "title": "Sewing Machine",
+        "type" : "Import",
+        "items": [
+            "Hanma",
+            "protex"
+        ]
+    },
+    {
+        "id":2,
+        "image":"/Images/bicyles3.png",
+        "img":"/Images/bicyles5.png",
+        "title": "Bicycles",
+        "type" : "Import",
+        "items": [
+            "Mountain Bike",
+            "RoadSter",
+            "Kids bicycles"
+        ]
+    },
+    {
+        "id":3,
+        "image":"/Images/Stationary.png",
+        "img":"/Images/stationary3.png",
+        "title": "Stationary Materials",
+        "type" : "Import",
+        "items": [
+            "Paper",
+            "Non Paper"
+        ]
+    },
+    {
+        "id":4,
+        "image":"/Images/metalone.png",
+        "img":"/Images/metal2.jpg",
+        "title": "Construction Inputs",
+        "type" : "Import",
+        "items": [
+            "Steel Bars",
+            "Aluminum",
+            "Pipes",
+            "Glazing"
+        ]
+    }
+]

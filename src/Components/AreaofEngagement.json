@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Manufacturing",
+        "description": "We offer manufacturing services in various sectors.",
+        "icon": "manufacturing-icon"
+    },
+    {
+        "id": 2,
+        "title": "Export",
+        "description": "Our export wing of our business is established with the prime objective.",
+        "icon": "export-icon"
+    },
+    {
+        "id": 3,
+        "title": "Import",
+        "description": "We are into importing and distributing a wide selection of items.",
+        "icon": "import-icon"
+    },
+    {
+        "id": 4,
+        "title": "Logistics and Supply",
+        "description": "We ensure timely delivery with our strong logistics and supply chain.",
+        "icon": "logistics-icon"
+    }
+]

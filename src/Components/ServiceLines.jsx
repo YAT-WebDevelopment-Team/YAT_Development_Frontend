@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
-
-import med1 from './images/med1.png';
-import med2 from './images/med2.png';
-import med3 from './images/med3.jpg';
-import tra1 from './images/tra1.jpg';
-import tra2 from './images/tra4.jpeg';
-import tra3 from './images/tra5.jpeg';
-import trac1 from './images/trac1.jpg';
-import trac2 from './images/trac2.jpeg';
-import trac3 from './images/trac3.jpeg';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import med1 from '/Images/med1.png';
+import med2 from '/Images/med2.png';
+import med3 from '/Images/med3.jpg';
+import tra1 from '/Images/tra1.jpg';
+import tra2 from '/Images/tra4.jpeg';
+import tra3 from '/Images/tra5.jpeg';
+import trac1 from '/Images/trac1.jpg';
+import trac2 from '/Images/trac2.jpeg';
+import trac3 from '/Images/trac3.jpeg';
 
 const ServiceLines = () => {
     const [selectedService, setSelectedService] = useState('Import');
@@ -77,7 +77,7 @@ const ServiceLines = () => {
         }
 
         return (
-            <div className="flex justify-start items-start w-full box-border m-0 p-2.5">
+            <div className="flex justify-start items-start w-full box-border m-0 ">
                 {alignment === 'left' && (
                     <div className="flex-1 w-[30%] mt-5 mx-5 mx-0 p-0">
                         <img src={currentImages[currentImageIndex]} className="w-full max-w-[500px] h-[400px] mx-0 rounded-[5px]" alt={`${selectedService} service`} />
@@ -97,21 +97,24 @@ const ServiceLines = () => {
     };
 
     return (
-        <div className="flex flex-col p-[5px]">
-            <Header />
-            <div className="flex justify-between bg-[#f0f4f8] shadow-[0_4px_8px_rgba(0,0,0,0.1)] mb-5 p-5 rounded-[10px]">
+        <>
+            <h> <Header /> </h>
+            <div className="flex flex-col pt-10">
+                {/* <div className="flex justify-between bg-[#f0f4f8] shadow-[0_4px_8px_rgba(0,0,0,0.1)] mb-5 p-5 rounded-[10px]">
                 <div className="text-[40px] font-[bold] text-[#007bff] uppercase tracking-[1px] m-0">Service Lines</div>
                 <div className="flex">
-                    <a href="#" className={`px-4 py-2 text-[25px] text-[#007bff] font-[bold] hover:text-white hover:bg-blue-600 transition duration-300 ${selectedService === 'Import' }`} onClick={() => handleChange('Import')}>Import</a>
-                    <a href="#" className={`px-4 py-2 text-[25px] text-[#007bff] font-[bold] hover:text-white hover:bg-blue-600 transition duration-300 ${selectedService === 'Export' }`} onClick={() => handleChange('Export')}>Export</a>
-                    <a href="#" className={`px-4 py-2 text-[25px] text-[#007bff] font-[bold] hover:text-white hover:bg-blue-600 transition duration-300 ${selectedService === 'Manufacturing'}`} onClick={() => handleChange('Manufacturing')}>Manufacturing</a>
+                    <a href="#" className={`px-4 py-2 text-[25px] text-[#007bff] font-[bold] hover:text-[#0056b3] transition duration-300 ${selectedService === 'Import' }`} onClick={() => handleChange('Import')}>Import</a>
+                    <a href="#" className={`px-4 py-2 text-[25px] text-[#007bff] font-[bold] hover:text-[#0056b3] transition duration-300 ${selectedService === 'Export' }`} onClick={() => handleChange('Export')}>Export</a>
+                    <a href="#" className={`px-4 py-2 text-[25px] text-[#007bff] font-[bold] hover:text-[#0056b3] transition duration-300 ${selectedService === 'Manufacturing'}`} onClick={() => handleChange('Manufacturing')}>Manufacturing</a>
                 </div>
+            </div> */}
+                <button className="text-lg px-8 py-3 bg-[#61dafb] bg-gradient-to-b from-[#61dafb] to-[#21a1f1] text-white shadow-md rounded-lg hover:bg-[#17a589] hover:translate-x-[-3px] transition duration-300 self-end align-content:end" onClick={() => window.location.href = '/contact-us'} > Contact Us </button>
+                {renderContent('left')}
+                {renderContent('right')}
+                {renderContent('left')}
             </div>
-            <button className="text-lg px-8 py-3 bg-[#61dafb] bg-gradient-to-b from-[#61dafb] to-[#21a1f1] text-white shadow-md rounded-lg hover:bg-[#17a589] hover:translate-x-[-3px] transition duration-300 self-end align-content:end" onClick={() => window.location.href = '/contact-us'} > Contact Us </button>
-            {renderContent('left')}
-            {renderContent('right')}
-            {renderContent('left')}
-        </div>
+            <Footer />
+        </>
     );
 };
 
