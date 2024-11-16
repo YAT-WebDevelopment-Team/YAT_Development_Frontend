@@ -30,7 +30,7 @@ const Imports = () => {
             <Header page={page} />
 
             <div className="h-[450px] fixed top-0 w-full z-0 bg-cover mt-10" style={{ backgroundImage: "url('/Images/Hero_Imports4.png')" }}>
-                <div className="bg-gradient-to-r absolute inset-0 from-gray-950 via-gray-900 to-gray-600 opacity-80"></div>
+                <div className="bg-gradient-to-r absolute inset-0 from-gray-900 via-gray-800 to-gray-600 opacity-60"></div>
                 <div className="relative flex justify-center items-center h-full px-8">
                     <h1 className="text-4xl text-white font-bold">IMPORT</h1>
                     <div className="absolute right-4 bottom-[-2rem] bg-white shadow-sm rounded-lg px-9 py-5 flex space-x-2 items-center">
@@ -56,8 +56,8 @@ const Imports = () => {
                     <div className="flex flex-col space-y-2">
                         <p className="text-lg font-semibold text-gray-700">Call Anytime</p>
                         <a href='tel:+251911362741' className="text-xl font-bold text-gray-800">+251 911 362 741</a>
-                        <button className="mt- border font-semibold border-indigo-700 bg-indigo-700 text-white  rounded-2xl px-3 py-2  hover:bg-gray-200 hover:text-gray-800 hover:border-gray-800  transition duration-300">
-                            Contact us
+                        <button className="mt-7 md:w-40 w-28 md:px-4 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-700 text-white font-semibold shadow-lg hover:from-indigo-600 hover:to-indigo-800 hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-opacity-50">
+                            Contact Us
                         </button>
                     </div>
                 </div>

@@ -42,7 +42,7 @@ const Exports = () => {
 
             {/* Hero section */}
             <div className="h-[450px] fixed top-0 w-full z-0 bg-cover mt-10" style={{ backgroundImage: "url('/Images/Exports_Hero.jpeg')" }}>
-                <div className="bg-gradient-to-r absolute inset-0  from-gray-950 via-gray-900 to-gray-600  opacity-80"></div>
+                <div className="bg-gradient-to-r absolute inset-0  from-gray-900 via-gray-800 to-gray-600  opacity-60"></div>
                 <div className="relative flex justify-center items-center h-full px-8">
                     <h1 className="text-4xl text-white font-bold">EXPORT</h1>
                     <div className="absolute right-4 bottom-[-2rem] bg-white shadow-sm rounded-lg px-9 py-5 flex space-x-2 items-center">
