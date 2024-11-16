@@ -36,7 +36,7 @@ const Imports = () => {
                     <div className="absolute right-4 bottom-[-2rem] bg-white shadow-sm rounded-lg px-9 py-5 flex space-x-2 items-center">
                         <Link to="/" className="font-semibold text-lg text-gray-700 hover:text-indigo-800 hover:underline decoration-indigo-800">Home</Link>
                         <span className="text-gray-600">/</span>
-                        <span className="font-semibold text-lg text-indigo-700">Imports</span>
+                        <span className="font-semibold text-lg text-indigo-700">Import</span>
                     </div>
                 </div>
             </div>
