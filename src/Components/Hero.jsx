@@ -36,7 +36,7 @@ const Hero = () => {
             ></div>
 
             {/* Color Overlay with Blur */}
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-700 to-amber-300 opacity-30 blur-md"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-700 to-indigo-700 opacity-30 blur-md"></div>
 
             {/* Content */}
             <div className="relative text-center px-6 z-10">
