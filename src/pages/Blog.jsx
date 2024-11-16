@@ -4,8 +4,6 @@ import blogimage2 from "/Images/blogimage2.jpg"
 import blogimage1 from "/Images/blogimage1.jpg"
 import blogimage3 from "/Images/blogimage3.jpg"
 import blogimage4 from "/Images/bghero2.png"
-import Header from './Header'
-import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import { FaCalendar } from 'react-icons/fa6'
 
@@ -18,7 +16,7 @@ const Blog = () => {
                 <title>Blog</title>
             </Helmet>
 
-            <Header page={page}/>
+
 
             <div className="h-[450px] fixed top-0 w-full z-0 bg-cover mt-10" style={{ backgroundImage: "url('/Images/bghero3.jpg')" }}>
                 <div className="bg-gradient-to-r absolute inset-0  from-gray-900 via-gray-800 to-gray-600  opacity-60"></div>
@@ -172,7 +170,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </div>
     )
 }

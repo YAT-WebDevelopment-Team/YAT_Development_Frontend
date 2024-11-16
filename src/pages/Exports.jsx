@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header'
-import Footer from './Footer'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import ExportItemsData from "./ExportItems.json";
+import ExportItemsData from "../Components/ExportItems.json";
 import { FiMail } from "react-icons/fi";
 import { FaPhoneVolume } from 'react-icons/fa'
 import { FaPhone } from 'react-icons/fa6'
-import TesSlider from './TesSlider.json';
+import TesSlider from '../Components/TesSlider.json';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -38,7 +36,7 @@ const Exports = () => {
                 <title>Export</title>
             </Helmet>
 
-            <Header page={page} />
+
 
             {/* Hero section */}
             <div className="h-[450px] fixed top-0 w-full z-0 bg-cover mt-10" style={{ backgroundImage: "url('/Images/Exports_Hero.jpeg')" }}>
@@ -248,7 +246,7 @@ const Exports = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
+
         </div>
     )
 }

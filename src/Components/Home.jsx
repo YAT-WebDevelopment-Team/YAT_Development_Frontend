@@ -46,7 +46,7 @@ const Home = () => {
         <title>Home</title>
       </Helmet>
 
-      <Header page={page} />
+
 
 
 
@@ -81,8 +81,8 @@ const Home = () => {
 
                 <p
                   className={`text-white text-3xl font-bold transition-all duration-700 transform ${isHovered
-                      ? "translate-y-0 opacity-100"
-                      : "-translate-y-10 opacity-0"
+                    ? "translate-y-0 opacity-100"
+                    : "-translate-y-10 opacity-0"
                     }`}
                 >
                   {slider.title}
@@ -111,7 +111,7 @@ const Home = () => {
       </section>
 
 
-      <Footer />
+
     </div>
   )
 }

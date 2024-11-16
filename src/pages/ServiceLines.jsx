@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
+import Header from '../Components/Header.jsx';
+import Footer from '../Components/Footer.jsx';
 import med1 from '/Images/med1.png';
 import med2 from '/Images/med2.png';
 import med3 from '/Images/med3.jpg';
@@ -113,7 +113,7 @@ const ServiceLines = () => {
                 {renderContent('right')}
                 {renderContent('left')}
             </div>
-            <Footer />
+
         </>
     );
 };
