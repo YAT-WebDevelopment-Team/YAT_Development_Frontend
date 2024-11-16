@@ -36,8 +36,8 @@ const Footer = () => {
                             <Link to="/"><img src={yatlogo} alt="Yat" className='w-full h-full object-contain' /></Link>
                         </div>
                         <div className="flex items-center space-x-2 py-2">
-                            <FaLocationDot className="text-gray-500" />
-                            <span className='text-gray-500  transform transition-all duration-300 ease-in-out'>Yobek Building, Addis Ababa, Ethiopia</span>
+                            <FaLocationDot className="text-gray-600" />
+                            <span className='text-gray-600  transform transition-all duration-300 ease-in-out'>Yobek Building, Addis Ababa, Ethiopia</span>
                         </div>
                     </div>
 
@@ -45,16 +45,16 @@ const Footer = () => {
                         <h4 className="font-bold text-indigo-700 mb-5">Information</h4>
                         <ul>
                             <li className="pb-2">
-                                <Link to='#' className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Manufacturing</Link>
+                                <Link to='#' className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Manufacturing</Link>
                             </li>
                             <li className="pb-2">
-                                <Link to='#' className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Import</Link>
+                                <Link to='#' className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Import</Link>
                             </li>
                             <li className="pb-2">
-                                <Link to="/Exports" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Export</Link>
+                                <Link to="/Exports" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Export</Link>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Blog</a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -63,22 +63,22 @@ const Footer = () => {
                         <h4 className="font-bold text-indigo-700 mb-5">Helpful Links</h4>
                         <ul>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> About Us</a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> About Us</a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">FAQ</a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out">FAQ</a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Help & Support</a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Help & Support</a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Terms & Conditions </a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Terms & Conditions </a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Privacy Policy </a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Privacy Policy </a>
                             </li>
                             <li className="pb-2">
-                                <a href="#" className="text-gray-500 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Contact Us </a>
+                                <a href="#" className="text-gray-600 hover:text-indigo-800 hover:font-semibold  transform transition-all duration-300 ease-in-out"> Contact Us </a>
                             </li>
                         </ul>
                     </div>
@@ -86,16 +86,16 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold text-indigo-700 mb-5">Contact Us</h4>
 
-                        <div className="flex items-center space-x-2 py-2 text-gray-500">
+                        <div className="flex items-center space-x-2 py-2 text-gray-600">
                             <FaPhone className="text-indigo-800" />
-                            <a href="tel:+251911362741" className="text-gray-500 hover:text-indigo-800 hover:font-semibold transform transition-all duration-300 ease-in-out">+251 911 362 741</a>
+                            <a href="tel:+251911362741" className="text-gray-600 hover:text-indigo-800 hover:font-semibold transform transition-all duration-300 ease-in-out">+251 911 362 741</a>
                         </div>
 
-                        <div className="flex items-center space-x-2 py-2 text-gray-500">
+                        <div className="flex items-center space-x-2 py-2 text-gray-600">
                             <FiMail className="text-indigo-800" />
-                            <a href="mailto:yatagro@gmail.com" className="text-gray-500 hover:text-indigo-800 hover:font-semibold transform transition-all duration-300 ease-in-out">yatagro@gmail.com</a>
+                            <a href="mailto:yatagro@gmail.com" className="text-gray-600 hover:text-indigo-800 hover:font-semibold transform transition-all duration-300 ease-in-out">yatagro@gmail.com</a>
                         </div> 
-                        <p className='mt-4 text-gray-500  transform transition-all duration-300 ease-in-out'>Subscribe to our news letter</p>
+                        <p className='mt-4 text-gray-600  transform transition-all duration-300 ease-in-out'>Subscribe to our news letter</p>
                         <div className="mt-2 flex">
                             <input
                                 type="email"
