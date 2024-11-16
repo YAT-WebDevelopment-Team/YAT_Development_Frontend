@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header'
-import Footer from './Footer'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import ImportItemsData from "./ImportItems.json";
+import ImportItemsData from "../Components/ImportItems.json";
 import { FiMail } from "react-icons/fi";
 import { FaPhoneVolume } from 'react-icons/fa'
 import { FaPhone } from 'react-icons/fa6'
-import TesSlider from './TesSlider.json';
+import TesSlider from '../Components/TesSlider.json';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -27,7 +25,7 @@ const Imports = () => {
                 <title>Import</title>
             </Helmet>
 
-            <Header page={page} />
+
 
             <div className="h-[450px] fixed top-0 w-full z-0 bg-cover mt-10" style={{ backgroundImage: "url('/Images/Hero_Imports4.png')" }}>
                 <div className="bg-gradient-to-r absolute inset-0 from-gray-950 via-gray-900 to-gray-600 opacity-80"></div>
@@ -170,7 +168,7 @@ const Imports = () => {
                 </div>
             </section>
 
-            <Footer />
+
 
         </div>
     )
