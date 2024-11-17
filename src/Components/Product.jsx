@@ -26,7 +26,7 @@ const Services = () => {
                         <FaChevronLeft size={24} />
                     </button>
                 <Swiper
-                    modules={[Navigation, Autoplay]}
+                        modules={[Navigation, Autoplay]}
                     loop={true}
                     spaceBetween={30}
                     slidesPerView={3}
@@ -63,11 +63,11 @@ const Services = () => {
                                                 </div>
                                                 <a className="inline-block bg-indigo-50 text-indigo-700 rounded-full py-3 px-5 mb-4" href="#">Explore More</a>
                                             </div>
-                                            <div className="service-content absolute -bottom-full left-0 mx-5 text-center rounded-xl bg-indigo-700 opacity-0 pb-4" style={{transition:'0.5s'}}>
-                                                <a href="#"><h4 className="text-white mb-4 py-3">{product.title}</h4></a>
+                                            <div className="service-content absolute -bottom-full left-0 mx-5 text-center rounded-xl bg-indigo-100 opacity-0 pb-4" style={{transition:'0.5s'}}>
+                                                <a href="#"><h4 className="text-indigo-700 mb-4 py-3">{product.title}</h4></a>
                                                 <div className="px-4">
-                                                    <p className="mb-4 text-amber-300">{product.description}</p>
-                                                    <a className="bg-amber-300 hover:bg-transparent border-amber-300 border-2 text-indigo-700 hover:text-amber-300 font-semibold rounded-full py-3 px-5" href="#">Explore More</a>
+                                                    <p className="mb-4 text-indigo-700">{product.description}</p>
+                                                    <a className="bg-indigo-700 hover:bg-transparent border-indigo-700 border-2 text-white hover:text-indigo-700 font-semibold rounded-full py-3 px-5" href="#">Explore More</a>
                                                 </div>
                                             </div>
                                         </div>

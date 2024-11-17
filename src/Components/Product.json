@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Product 1",
         "image": "/Images/coffeeslider1.jpg",
-        "description": "This is a brief description of product 1.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
+        "description": "This is a brief description of product 1.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit., adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
     },
     {
         "id": 2,
@@ -18,39 +18,9 @@
         "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Product 3",
         "image": "/Images/oilseedca2.jpg",
-        "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
-    },
-    {
-        "id": 3,
-        "title": "Product 3",
-        "image": "/Images/coffeeslider1.jpg",
-        "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
-    },
-    {
-        "id": 3,
-        "title": "Product 3",
-        "image": "/Images/coffeeslider1.jpg",
-        "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
-    },
-    {
-        "id": 3,
-        "title": "Product 3",
-        "image": "/Images/coffeeslider1.jpg",
-        "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
-    },
-    {
-        "id": 3,
-        "title": "Product 3",
-        "image": "/Images/coffeeslider1.jpg",
-        "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
-    },
-    {
-        "id": 3,
-        "title": "Product 3",
-        "image": "/Images/coffeeslider1.jpg",
         "description": "This is a brief description of product 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit."
     }
 ]
